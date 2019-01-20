@@ -4,5 +4,13 @@
 <%= @citation.text %>
 </p>
 
+<h2>Comments</h2>
+<%= render @citation.comments %>
+
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+
 <%= link_to 'Edit', edit_citation_path(@citation) %>
 <%= link_to 'Back', citations_path %>
